@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>GCP Cloud Engineer</title>
+    <link type="text/css" rel="stylesheet" href="../style/jsmind.css" />
+    <style type="text/css">
+        button{width:140px;}
+        #layout{width:1430px;}
+        #jsmind_copy{width:410px;height:600px;border:solid 1px #ccc;overflow:auto;float:left;}
+        #jsmind_container{float:left;width:1000px;height:600px;border:solid 1px #ccc;background:#f4f4f4;}
+        #jsmind_container2{width:1800px;height:1000px;border:solid 1px #ccc;background:#f4f4f4;}
+        #topic_title{font-family: sans-serif;font-size: x-large;}
+        #topic_text{font-family: sans-serif;}
+    </style>
+</head>
+<body>
+<div id="layout">
+    <div id="jsmind_container"></div>
+    <div id="jsmind_copy">
+        <div id="topic_title"></div>
+        <div id="topic_text"></div>
+    </div>
+</div>
+<script type="text/javascript" src="../js/jsmind.js"></script>
+<script type="text/javascript">
+    var _jm = null;
+    function open_empty(){
+        var options = {
+            container: 'jsmind_container',
+            editable: false,
+            support_html: true,
+            theme: 'greensea',
+        }
+        _jm = jsMind.show(options);
+    }
+
+    function open_json(){
+        var mind = {
+            "meta":{
+                "name":"GCP Cloud Engineer",
+                "author":"ford.j.martin@gmail.com",
+                "version":"0.1"
+            },
+            "format":"node_tree",
+            "data":{"id":"root", "topic":"GCP Cloud Engineer", "data":{"text":"Lorem ipsum"}, "children":[
+                {"id":"gcp", "topic":"GCP", "direction":"right", "children":[
+                    {"id":"security", "topic":"Security", "children":[
+                        {"id":"iam", "topic":"Identity and Access Management", "children":[
+                            {"id":"roles", "topic":"Roles"},
+                            {"id":"serviceAccounts", "topic":"Service Accounts"},
+                            {"id":"serviceAgents", "topic":"Service Agents"},
+                        ]},
+                        {"id":"cloudIdentity", "topic":"Cloud Identity"},
+                        {"id":"orgPolicies", "topic":"Organisational Policies"},
+                        {"id":"serviceContols", "topic":"VPC Service Controls", "children":[
+                            {"id":"accessContextLists", "topic":"Access Context Lists"},
+                        ]},
+                        {"id":"iap", "topic":"Identity-Aware Proxy"},
+                        {"id":"dlp", "topic":"Data Loss Prevention"},
+                        {"id":"kms", "topic":"Cloud KMS"},
+                        {"id":"secretManager", "topic":"Secret Manager"},
+                    ]},
+                    {"id":"compute", "topic":"Compute","children":[
+                        {"id":"network", "topic":"VPC Network","children":[
+                            {"id":"subnetwork", "topic":"Subnetworks"},
+                            {"id":"firewallRules", "topic":"Firewall Rules"},
+                            {"id":"routes", "topic":"Routes"},
+                            {"id":"networkPeering", "topic":"Network Peering"},
+                            {"id":"sharedNetworks", "topic":"Shared Networks"},
+                            {"id":"serverlessVPCAccess", "topic":"Serverless VPC Access"},
+                            {"id":"loadBalancing", "topic":"Load Balancing"},
+                            {"id":"cloudDNS", "topic":"Cloud DNS"},
+                            {"id":"cloudNAT", "topic":"Cloud NAT"},
+                            {"id":"privateServiceConnect", "topic":"Private Service Connect"},
+                            {"id":"partnerInterconnect", "topic":"Partner Interconnect"},
+                            {"id":"cloudArmor", "topic":"Cloud Armor"},
+                            {"id":"sslPolicies", "topic":"SSL Policies"},
+                            {"id":"connectivityTests", "topic":"Connectivity Tests"},
+                        ]},
+                        {"id":"gce", "topic":"Compute Engine"},
+                        {"id":"gke", "topic":"Kubernetes Engine"},
+                        {"id":"cloudFunctions", "topic":"Cloud Functions"},
+                        {"id":"cloudRun", "topic":"Cloud Run"},
+                        {"id":"appEngine", "topic":"AppEngine"},
+                        {"id":"cloudComposer", "topic":"Cloud Composer"},
+                        {"id":"dataflow", "topic":"Dataflow"},
+                    ]},
+                    {"id":"data", "topic":"Data", "children":[
+                        {"id":"bigquery", "topic":"BigQuery"},
+                        {"id":"cloudStorage", "topic":"Cloud Storage"},
+                        {"id":"cloudSQL", "topic":"CloudSQL"},
+                    ]},
+                    {"id":"tooling", "topic":"Tooling", "children":[
+                        {"id":"cloudScheduler", "topic":"Cloud Scheduler"},
+                        {"id":"logging", "topic":"Logging", "children":[
+                            {"id":"auditLogs", "topic":"Audit Logs"},
+                            {"id":"logSinks", "topic":"Log Sinks"},
+                        ]},
+                        {"id":"monitoring", "topic":"Monitoring"},
+                        {"id":"alerting", "topic":"Alerting"},
+                    ]},
+                    {"id":"gcpMisc", "topic":"Miscellaneous", "children":[
+                        {"id":"quotas", "topic":"Quotas"},
+                        {"id":"assetInventory", "topic":"Asset Inventory"},
+                    ]},
+                ]},
+                {"id":"devops","topic":"DevOps","direction":"right","children":[
+                    {"id":"git", "topic":"Git","children":[
+                        {"id":"branchingStrategies", "topic":"Branching Strategies"},
+                    ]},
+                    {"id":"iac", "topic":"Infrastructure as Code","children":[
+                        {"id":"terraform", "topic":"Terraform"},
+                        {"id":"ansible", "topic":"Ansible"},
+                    ]},
+                    {"id":"azuredevops", "topic":"Azure DevOps","children":[
+                        {"id":"projects", "topic":"Projects","children":[
+                            {"id":"permissions", "topic":"Permissions"},
+                        ]},
+                        {"id":"repositories", "topic":"Repositories"},
+                        {"id":"pipelines", "topic":"Pipelines","children":[
+                            {"id":"sharedTemplates", "topic":"Shared Templates"},
+                            {"id":"yaml", "topic":"YAML"},
+                            {"id":"bash", "topic":"Bash"},
+                            {"id":"secrets", "topic":"Secrets and Secure Files"},
+                        ]},
+                    ]},
+                ]},
+                {"id":"programming","topic":"Programming","direction":"left","children":[
+                    {"id":"python", "topic":"Python"},
+                    {"id":"java", "topic":"Java"},
+                    {"id":"golang", "topic":"GoLang"},
+                    {"id":"nodejs", "topic":"NodeJS"},
+                ]},
+                {"id":"misc","topic":"Miscellaneous","direction":"left","children":[
+                    {"id":"linux","topic":"Linux"},
+                ]}
+            ]}
+        }
+        _jm.show(mind);
+
+        document.querySelectorAll('jmnode').forEach(item => {
+            item.addEventListener('click', event => {
+                var selected_node = _jm.get_selected_node();
+                if(!!selected_node){
+                    document.getElementById("topic_title").textContent="";
+                    document.getElementById("topic_text").textContent="";
+                    document.getElementById("topic_title").textContent=selected_node.topic;
+                    document.getElementById("topic_text").textContent=selected_node.data.data.text;
+                }
+            })
+        })
+    }
+
+    function expand_to_level1(){
+        _jm.collapse_all();
+        _jm.expand_to_depth(1);
+    }
+
+    open_empty();
+    open_json();
+    expand_to_level1();
+</script>
+</body>
+</html>
